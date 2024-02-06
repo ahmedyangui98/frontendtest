@@ -106,7 +106,6 @@ function App() {
               </div>
             </div>
             <TaskList tasks={filteredTasks} onTaskUpdated={handleTaskUpdated} onTaskDeleted={handleTaskDeleted} moveTask={moveTask} />
-            {/* Ajouter le composant UpdateTask avec la fenêtre modale */}
             <UpdateTask isOpen={modalIsOpen} toggle={toggleModal} onTaskUpdated={handleTaskUpdated} />
           </div>
         </div>
