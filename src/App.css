@@ -36,3 +36,69 @@
     transform: rotate(360deg);
   }
 }
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item {
+  display: inline-block;
+  width: 200px; /* Largeur fixe pour chaque tâche */
+  height: 200px; /* Hauteur fixe pour chaque tâche */
+  border: 2px solid gray; /* Bordure de chaque tâche */
+  padding: 10px;
+  margin-right: 10px; /* Espace entre les tâches */
+  margin-bottom: 10px; /* Espace entre les lignes */
+  overflow: hidden; /* Cache le débordement de la description */
+}
+
+.task-description {
+  max-height: 80px; /* Hauteur maximale pour la description */
+  overflow: hidden;
+}
+.task-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espace entre les tâches */
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.header {
+  background-color: rgba(169, 169, 169, 0.3);
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+
+.sidebar {
+  background-color: black;
+  width: 50px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding-left: 50px; /* Ajoute un padding à gauche pour éviter le chevauchement de la barre latérale */
+  box-sizing: border-box;
+}
