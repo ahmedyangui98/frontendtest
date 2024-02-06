@@ -17,7 +17,6 @@ const AddTaskForm = ({ onTaskAdded }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send the new task to the backend using Axios
     axios
       .post('http://localhost:4000/tasks', newTask)
       .then((response) => {

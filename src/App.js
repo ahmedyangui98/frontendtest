@@ -12,9 +12,8 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [filteredTasks, setFilteredTasks] = useState([]);
   const [filterStatus, setFilterStatus] = useState('All');
-  const [filterDate, setFilterDate] = useState(null); // Ajout de l'état pour filtrer par date
-  const [modalIsOpen, setModalIsOpen] = useState(false); // Ajout de l'état pour contrôler la fenêtre modale
-
+  const [filterDate, setFilterDate] = useState(null); 
+  const [modalIsOpen, setModalIsOpen] = useState(false); 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
   useEffect(() => {

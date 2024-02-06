@@ -8,7 +8,7 @@ const UpdateTask = ({ task, onTaskUpdated, isOpen, toggle }) => {
 
   const handleUpdateTask = () => {
     onTaskUpdated(updatedTask);
-    toggle(); // Fermez la fenêtre modale après la mise à jour
+    toggle();
   };
 
   return (

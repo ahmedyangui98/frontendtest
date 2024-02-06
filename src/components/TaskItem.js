@@ -182,7 +182,6 @@ function TaskItem({ task, index, onTaskUpdated, onTaskDeleted, moveTask, onShowU
       <Modal isOpen={isUpdateModalOpen} toggle={toggleUpdateModal}>
         <ModalHeader toggle={toggleUpdateModal}>Update Task</ModalHeader>
         <ModalBody>
-          {/* Pass necessary props to the UpdateTask component */}
           <UpdateTask task={task} onTaskUpdated={onTaskUpdated} toggleUpdateModal={toggleUpdateModal} />
         </ModalBody>
         <ModalFooter>
